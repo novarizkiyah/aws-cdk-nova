@@ -16,7 +16,7 @@ class LambdaFunctionStack(Stack):
         fn_lambda_a = _lambda.Function(
             self,
             "{}-function-".format(id),
-            code=_lambda.AssetCode("../lambda-function/"),
+            code=_lambda.AssetCode("lambda-function"),
             handler="app.handler",
             timeout=_cdk.Duration.seconds(60),
             runtime=_lambda.Runtime.PYTHON_3_8)
