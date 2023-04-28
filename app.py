@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 from constructs import Construct
-from constructs import Construct
 from aws_cdk import App, Stack, Stage
 import os
 from aws_cdk import aws_dynamodb as dynamodb
