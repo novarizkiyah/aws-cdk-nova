@@ -38,7 +38,7 @@ class PipelineStack(Stack):
                     "main",
                     connection_arn=github_connection_arn
                 ),
-                commands=["cdk", "npm install -g aws-cdk",
+                commands=["npm install -g aws-cdk",
                           "pip install -r requirements.txt", "cdk synth"],
                 primary_output_directory="cdk.out"
             ))
