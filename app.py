@@ -40,7 +40,7 @@ class PipelineStack(Stack):
                 ),
                 commands=["cdk", "npm install -g aws-cdk",
                           "pip install -r requirements.txt", "cdk synth"],
-                primary_output_directory="5-cdk-pipelines/cdk/cdk.out"
+                primary_output_directory="cdk.out"
             ))
 
         pipeline.add_stage(
